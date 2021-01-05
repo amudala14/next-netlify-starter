@@ -4,7 +4,7 @@ import Link from "next/link";
 const Aside = ({ linkActive }) => {
   return (
     <div className="sidebar">
-      <div className="sidebar-group">
+      <div className="sidebar-group d-mobile-hidden ">
         <div className="logo-container">
           <img src="../assets/images/logo.png" alt="" className="logo" />
         </div>

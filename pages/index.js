@@ -13,7 +13,7 @@ export default function Home() {
         <div className="login-details">
           <div className="login-details--containt">
             <img src="../assets/images/Group 430.svg" alt="" />
-            <h1>Welcome to the PABRA Dashboard </h1>
+            <h1>Welcome to the PABRA Dashboard</h1>
           </div>
         </div>
         <div className="login-form--area">
