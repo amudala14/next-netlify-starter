@@ -78,9 +78,9 @@ const home = () => {
                   </div>
               </div>
 
-              <div className="section-lists">
+              {/* <div className="section-lists">
                 <List />
-              </div>
+              </div> */}
 
             </div>
             <Footer />

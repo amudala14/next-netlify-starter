@@ -1,12 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import Link from "next/link";
 
 const Aside = ({ linkActive }) => {
+  const [isMenuVisible, setMenuVisibility] = useState(false)
+  // const handleM
+  // useEffect(() => {
+
+  // }, [])
   return (
     <div className="sidebar">
-      <div className="sidebar-group d-mobile-hidden ">
+      <div className="toggleMenuMobile d-desk-hidden">
+        <span onClick={() => setMenuVisibility(true)}>
+            <svg viewBox="0 0 20 20">
+              <path d="M 19.9876 1.998 L -0.0108 1.998 L -0.0108 -0.0019 L 19.9876 -0.0019 L 19.9876 1.998 Z"></path>
+              <path d="M 19.9876 7.9979 L -0.0108 7.9979 L -0.0108 5.9979 L 19.9876 5.9979 L 19.9876 7.9979 Z"></path>
+              <path d="M 19.9876 13.9977 L -0.0108 13.9977 L -0.0108 11.9978 L 19.9876 11.9978 L 19.9876 13.9977 Z"></path>
+              <path d="M 19.9876 19.9976 L -0.0108 19.9976 L -0.0108 17.9976 L 19.9876 17.9976 L 19.9876 19.9976 Z"></path>
+            </svg>
+          </span>
+      </div>
+      <div className={`${isMenuVisible ? 'sidebar-group' : ' d-mobile-hidden'}` } >
         <div className="logo-container">
           <img src="../assets/images/logo.png" alt="" className="logo" />
+          <span className="d-desk-hidden" onClick={() => setMenuVisibility(false)}>
+            <svg viewBox="0 0 20 20">
+              <path d="M 20.7895 0.977 L 19.3752 -0.4364 L 10.081 8.8522 L 0.7869 -0.4364 L -0.6274 0.977 L 8.6668 10.2656 L -0.6274 19.5542 L 0.7869 20.9676 L 10.081 11.679 L 19.3752 20.9676 L 20.7895 19.5542 L 11.4953 10.2656 L 20.7895 0.977 Z"></path>
+          </svg>
+          </span>
         </div>
         <ul className="sidebar-group-menu">
           <Link href="/home">

@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import Link from "next/link";
+import Router from "next/Router";
 
 const Head = () => {
   return (
     <div className="header">
+      <img onClick={() => Router.push('/home')} src="../assets/images/logo.png" alt="" className="header-logo d-desk-hidden" />
       <ul className="header-menu-group">
           <Link href="/home">
               <svg id="Notifications" xmlns="http://www.w3.org/2000/svg" width="15.918" height="16" viewBox="0 0 15.918 16">
