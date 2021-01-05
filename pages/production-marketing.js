@@ -62,8 +62,8 @@ const home = () => {
               <div className="section-1">
                   <div className="medium-card">
                     <div className="statistic-card__head">
-                      <div class="statistic-card--title">ALL PABRA COUNTRIES</div>
-                      <div class="statistic-card--filter">
+                      <div className="statistic-card--title">ALL PABRA COUNTRIES</div>
+                      <div className="statistic-card--filter">
                         <span>ECABREN</span>
                         <img src="/assets/images/filter.svg" alt="" />
                       </div>

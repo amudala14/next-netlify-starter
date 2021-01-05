@@ -23,6 +23,8 @@ const Profile = () => {
 
   const handleShowContainer = (targetedContainer) => {
     setContainer(targetedContainer);   
+    var element = document.getElementById(targetedContainer);
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
   const addNewField = () => {
@@ -67,7 +69,7 @@ const Profile = () => {
                   
                 </div>
                 <div className="section-add-data--contents">
-                  <div className={ showContainer === 'new-organization' ? '' : 'd-none' }>
+                  <div id="new-organization" className={ showContainer === 'new-organization' ? '' : 'd-none' }>
                     <form action="" className="newOrgForm">
 
                       <div className="form-input--container">
@@ -138,7 +140,7 @@ const Profile = () => {
                       
                     </form>
                   </div>
-                  <div className={showContainer === 'bean-specification' ? '' : 'd-none'}>
+                  <div id="bean-specification" className={showContainer === 'bean-specification' ? '' : 'd-none'}>
                     <form action="">
                       <div className="form-input--container">
                         <FormSelect
@@ -181,7 +183,7 @@ const Profile = () => {
                       </div>
                     </form>
                   </div>
-                  <div className={`${showContainer === 'upload-file' ? '' : 'd-none'}`}>
+                  <div id="upload-file" className={`${showContainer === 'upload-file' ? '' : 'd-none'}`}>
                     <FileUploader />
                   </div>
                 </div>

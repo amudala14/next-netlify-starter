@@ -549,6 +549,11 @@ textarea.form-control {
     width: 25px;
     height: 25px;
   }
+
+  .page-title {
+    max-width: 190px;
+    line-height: 1.4;
+  }
 }
 
 /* HEADER */
@@ -703,6 +708,52 @@ border-bottom: .5px solid var(--border-white-transparent);
   /* margin-bottom: 5px; */
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .footer-container {
+    padding: 50px 0 20px 0;
+  }
+
+  .footer-about {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  .footer-copyright {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+
+  .footer-copyright ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .footer-copyright ul a:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .copyright-text {
+    text-align: center;
+  }
+
+  .social-text {
+    display: none;
+  }
+
+  .footer-about {
+    padding-bottom: 30px;
+  }
+
 }
 
 /* CARDS */
@@ -861,6 +912,8 @@ border-bottom: .5px solid var(--border-white-transparent);
 .statistic-card--title {
   font-weight: 700;
   color: var(--color-text);
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .statistic-card--filter {
@@ -872,7 +925,7 @@ border-bottom: .5px solid var(--border-white-transparent);
   margin-right: 15px;
   font-weight: 600;
   color: var(--color-text);
-  font-size: 15px
+  font-size: 14px
 }
 
 .statistic-card--filter img {
@@ -1221,7 +1274,7 @@ border-bottom: .5px solid var(--border-white-transparent);
 }
 
 .enterprice-image-holder {
-  height: 120px;
+  height: 140px;
   width: 100%;
 }
 
@@ -1431,7 +1484,42 @@ span.filepond--label-action {
     min-height: 15.75em !important;
 }
 
+@media (max-width: 698px) {
+  .section-add-data {
+    grid-template-columns: 1fr;
+    margin-left: 0%;
+    padding-top: 30px;
+  }
+
+  .section-add-data--menu {
+    padding-bottom: 50px ;
+  }
+
+  .form-input--container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  .form-control {
+    height: 40px;
+  }
+
+  .fileUploaderSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .uploadFileNoteBlock {
+    order: 1;
+  }
+
+  .filepond--wrapper {
+    order: 2;
+  }
+}
+
 /* Platforms */
 .list-title {
   font-size: 15px;
 }
+

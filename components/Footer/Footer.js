@@ -35,10 +35,10 @@ const Footer = () => {
         </div>
         <div className="footer-copyright">
           <ul className="footer-link">
-            <Link href="#">FAQ</Link>
-            <Link href="#">Terms of use</Link>
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Contact us</Link>
+            <Link href="/">FAQ</Link>
+            <Link href="/">Terms of use</Link>
+            <Link href="/">Privacy Policy</Link>
+            <Link href="/">Contact us</Link>
           </ul>
           <span className="copyright-text">Copyright 2020 PABRA</span>
         </div>
